@@ -26,7 +26,6 @@ The objective of this project is to explore the dataset to identify patterns tha
 - Summarize business insights based on findings.
 # Model Performance Summary:
 ## Basic Model Performance
-## Model Performance Comparison
 
 | Model Name                    | Train Accuracy | Test Accuracy | Precision | Recall | F1-Score | AUC-ROC |
 |--------------------------------|---------------|--------------|-----------|--------|----------|---------|
@@ -36,9 +35,13 @@ The objective of this project is to explore the dataset to identify patterns tha
 | DecisionTreeClassifier        | 1.000         | 0.725        | 0.725     | 0.725  | 0.725    | 0.775   |
 | BaggingClassifier             | 0.988         | 0.789        | 0.789     | 0.789  | 0.788    | 0.907   |
 | RandomForestClassifier        | 1.000         | 0.819        | 0.820     | 0.819  | 0.819    | 0.932   |
-| AdaBoostClassifier            | 0.631         | 0.633        | 0.633     | 0.633  | 0.633    | 0.
+| AdaBoostClassifier            | 0.631         | 0.633        | 0.633     | 0.633  | 0.633    | 0.804   |
+| GradientBoostingClassifier    | 0.720         | 0.715        | 0.720     | 0.715  | 0.716    | 0.867   |
+| XGBClassifier                 | 0.842         | 0.761        | 0.762     | 0.761  | 0.761    | 0.903   |
+| LGBMClassifier                | 0.769         | 0.741        | 0.744     | 0.741  | 0.742    | 0.891   |
+| CatBoostClassifier            | 0.818         | 0.763        | 0.764     | 0.763  | 0.764    | 0.902   |
 
-## Model Performance Comparison
+## Random Forest Model Performance Comparison
 
 | Model Name                          | Train Accuracy | Test Accuracy | Precision | Recall | F1-Score | AUC-ROC |
 |--------------------------------------|---------------|--------------|-----------|--------|----------|---------|
