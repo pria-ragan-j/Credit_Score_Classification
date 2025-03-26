@@ -25,12 +25,29 @@ The objective of this project is to explore the dataset to identify patterns tha
 - Use the Test dataset for final predictions and generate output.
 - Summarize business insights based on findings.
 # Model Performance Summary:
-Model Name	Train Accuracy	Test Accuracy	Precision	Recall	F1-Score	AUC-ROC
-RandomForestClassifier	1.000	0.819	0.820	0.819	0.819	0.932
-RandomForest with Feature Importance	1.000	0.797	0.797	0.797	0.797	0.921
-RandomForest with RFE	1.000	0.797	0.797	0.797	0.797	0.921
-RandomForest with Best Parameters	0.947	0.811	0.811	0.811	0.811	0.927
-Final Model	0.947	0.811	0.811	0.811	0.811	0.927
+## Basic Model Performance
+## Model Performance Comparison
+
+| Model Name                    | Train Accuracy | Test Accuracy | Precision | Recall | F1-Score | AUC-ROC |
+|--------------------------------|---------------|--------------|-----------|--------|----------|---------|
+| Logistic Regression           | 0.631         | 0.632        | 0.641     | 0.632  | 0.629    | 0.793   |
+| KNeighborsClassifier          | 0.837         | 0.736        | 0.735     | 0.736  | 0.735    | 0.877   |
+| MultinomialNB                 | 0.576         | 0.576        | 0.565     | 0.576  | 0.559    | 0.739   |
+| DecisionTreeClassifier        | 1.000         | 0.725        | 0.725     | 0.725  | 0.725    | 0.775   |
+| BaggingClassifier             | 0.988         | 0.789        | 0.789     | 0.789  | 0.788    | 0.907   |
+| RandomForestClassifier        | 1.000         | 0.819        | 0.820     | 0.819  | 0.819    | 0.932   |
+| AdaBoostClassifier            | 0.631         | 0.633        | 0.633     | 0.633  | 0.633    | 0.
+
+## Model Performance Comparison
+
+| Model Name                          | Train Accuracy | Test Accuracy | Precision | Recall | F1-Score | AUC-ROC |
+|--------------------------------------|---------------|--------------|-----------|--------|----------|---------|
+| RandomForestClassifier              | 1.000         | 0.819        | 0.820     | 0.819  | 0.819    | 0.932   |
+| RandomForest with Feature Importance | 1.000         | 0.797        | 0.797     | 0.797  | 0.797    | 0.921   |
+| RandomForest with RFE                | 1.000         | 0.797        | 0.797     | 0.797  | 0.797    | 0.921   |
+| RandomForest with Best Parameters    | 0.947         | 0.811        | 0.811     | 0.811  | 0.811    | 0.927   |
+| Final Model                          | 0.947         | 0.811        | 0.811     | 0.811  | 0.811    | 0.927   |
+
 # Insights:
 1. The RandomForestClassifier provided the best test accuracy of **81.9%**, showing a strong ability to classify credit scores.
 2. Feature selection using RFE and feature importance did not significantly improve the model's performance.
