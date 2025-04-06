@@ -37,7 +37,9 @@ The objective of this project is to explore the dataset to identify patterns tha
 | RandomForestClassifier  | 1.000000       | 0.819133       | 0.819751  | 0.819133 | 0.819191 | 0.932200| 0.814129 | 0.003653|
 | AdaBoostClassifier      | 0.630629       | 0.632700       | 0.633101  | 0.632700 | 0.632766 | 0.804087| 0.631557 | 0.005993|
 | GradientBoostingClassifier | 0.719786    | 0.714867       | 0.720383  | 0.714867 | 0.715822 | 0.867345| 0.713971 | 0.004026|
-| XGBClassifier           | 0.842443       |
+| XGBClassifier           | 0.842443       | 0.760967       | 0.761840  | 0.760967 | 0.760936 | 0.902677| 0.766929 | 0.006329|
+| LGBMClassifier          | 0.768686       | 0.740933       | 0.744211  | 0.740933 | 0.741694 | 0.891150| 0.742614 | 0.005935|
+| CatBoostClassifier      | 0.817986       | 0.763400       | 0.764343  | 0.763400 | 0.763688 | 0.902032| 0.764771 | 0.004572|
 
 
 ## Random Forest Model Performance Comparison
