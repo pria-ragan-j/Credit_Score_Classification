@@ -27,29 +27,29 @@ The objective of this project is to explore the dataset to identify patterns tha
 # Model Performance Summary:
 ## Basic Model Performance
 
-| Model Name                    | Train Accuracy | Test Accuracy | Precision | Recall | F1-Score | AUC-ROC |
-|--------------------------------|---------------|--------------|-----------|--------|----------|---------|
-| Logistic Regression           | 0.631         | 0.632        | 0.641     | 0.632  | 0.629    | 0.793   |
-| KNeighborsClassifier          | 0.837         | 0.736        | 0.735     | 0.736  | 0.735    | 0.877   |
-| MultinomialNB                 | 0.576         | 0.576        | 0.565     | 0.576  | 0.559    | 0.739   |
-| DecisionTreeClassifier        | 1.000         | 0.725        | 0.725     | 0.725  | 0.725    | 0.775   |
-| BaggingClassifier             | 0.988         | 0.789        | 0.789     | 0.789  | 0.788    | 0.907   |
-| RandomForestClassifier        | 1.000         | 0.819        | 0.820     | 0.819  | 0.819    | 0.932   |
-| AdaBoostClassifier            | 0.631         | 0.633        | 0.633     | 0.633  | 0.633    | 0.804   |
-| GradientBoostingClassifier    | 0.720         | 0.715        | 0.720     | 0.715  | 0.716    | 0.867   |
-| XGBClassifier                 | 0.842         | 0.761        | 0.762     | 0.761  | 0.761    | 0.903   |
-| LGBMClassifier                | 0.769         | 0.741        | 0.744     | 0.741  | 0.742    | 0.891   |
-| CatBoostClassifier            | 0.818         | 0.763        | 0.764     | 0.763  | 0.764    | 0.902   |
+| Model Name              | Train Accuracy | Test Accuracy | Precision | Recall   | F1-Score | AUC-ROC | Mean CV  | Std CV  |
+|-------------------------|----------------|----------------|-----------|----------|----------|---------|----------|---------|
+| Logistic Regression     | 0.631100       | 0.631867       | 0.640713  | 0.631867 | 0.628559 | 0.792580| 0.629657 | 0.006653|
+| KNeighborsClassifier    | 0.836514       | 0.735667       | 0.734963  | 0.735667 | 0.734898 | 0.876567| 0.719829 | 0.005733|
+| MultinomialNB           | 0.576286       | 0.575933       | 0.565478  | 0.575933 | 0.559136 | 0.739475| 0.575914 | 0.006086|
+| DecisionTreeClassifier  | 1.000000       | 0.724900       | 0.724830  | 0.724900 | 0.724864 | 0.774505| 0.723586 | 0.004818|
+| BaggingClassifier       | 0.987600       | 0.788567       | 0.788579  | 0.788567 | 0.788175 | 0.907397| 0.784000 | 0.005174|
+| RandomForestClassifier  | 1.000000       | 0.819133       | 0.819751  | 0.819133 | 0.819191 | 0.932200| 0.814129 | 0.003653|
+| AdaBoostClassifier      | 0.630629       | 0.632700       | 0.633101  | 0.632700 | 0.632766 | 0.804087| 0.631557 | 0.005993|
+| GradientBoostingClassifier | 0.719786    | 0.714867       | 0.720383  | 0.714867 | 0.715822 | 0.867345| 0.713971 | 0.004026|
+| XGBClassifier           | 0.842443       |
+
 
 ## Random Forest Model Performance Comparison
 
-| Model Name                          | Train Accuracy | Test Accuracy | Precision | Recall | F1-Score | AUC-ROC |
-|--------------------------------------|---------------|--------------|-----------|--------|----------|---------|
-| RandomForestClassifier              | 1.000         | 0.819        | 0.820     | 0.819  | 0.819    | 0.932   |
-| RandomForest with Feature Importance | 1.000         | 0.797        | 0.797     | 0.797  | 0.797    | 0.921   |
-| RandomForest with RFE                | 1.000         | 0.797        | 0.797     | 0.797  | 0.797    | 0.921   |
-| RandomForest with Best Parameters    | 0.947         | 0.811        | 0.811     | 0.811  | 0.811    | 0.927   |
-| Final Model                          | 0.947         | 0.811        | 0.811     | 0.811  | 0.811    | 0.927   |
+| Model Name                                      | Train Accuracy | Test Accuracy | Precision | Recall   | F1-Score | AUC-ROC | Mean CV  | Std CV  |
+|--------------------------------------------------|----------------|----------------|-----------|----------|----------|---------|----------|---------|
+| RandomForestClassifier                           | 1.000000       | 0.819133       | 0.819751  | 0.819133 | 0.819191 | 0.932200| 0.814129 | 0.003653|
+| RandomForestClassifier with feature importance   | 1.000000       | 0.796533       | 0.797369  | 0.796533 | 0.796829 | 0.920672| 0.796857 | 0.003691|
+| RandomForestClassifier with RFE feature selection| 1.000000       | 0.796533       | 0.797369  | 0.796533 | 0.796829 | 0.920672| 0.796857 | 0.003691|
+| RandomForestClassifier with best parameters      | 0.946771       | 0.810667       | 0.811474  | 0.810667 | 0.810865 | 0.926892| 0.805814 | 0.003221|
+| Final Model                                      | 0.946771       | 0.810667       | 0.811474  | 0.810667 | 0.810865 | 0.926892| 0.805814 | 0.003221|
+
 
 # Insights:
 1. The RandomForestClassifier provided the best test accuracy of **81.9%**, showing a strong ability to classify credit scores.
